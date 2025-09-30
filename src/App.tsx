@@ -1,10 +1,15 @@
-import LogosMarquee from './components/ui/logos-marquee';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignIn from './pages/SignIn';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background">
-      <LogosMarquee />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

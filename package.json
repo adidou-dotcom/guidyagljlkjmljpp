@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lovable-tagger": "^1.1.10"
+    "lovable-tagger": "^1.1.10",
+    "react-router-dom": "^7.9.3"
   }
 }
