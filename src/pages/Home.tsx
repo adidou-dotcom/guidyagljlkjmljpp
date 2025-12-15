@@ -22,9 +22,23 @@ const Home = () => {
             <h2 className="text-5xl font-bold text-foreground mb-4">
               Connectez-vous avec votre établissement
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Rejoignez le réseau des étudiants et découvrez les opportunités qui vous attendent
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/jobs"
+                className="bg-primary text-primary-foreground px-8 py-3 rounded-md hover:opacity-90 transition-opacity font-medium text-lg"
+              >
+                Trouver un job
+              </Link>
+              <Link
+                to="/recruteurs"
+                className="border border-primary text-primary px-8 py-3 rounded-md hover:bg-primary/10 transition-colors font-medium text-lg"
+              >
+                Découvrir les entreprises
+              </Link>
+            </div>
           </div>
         </section>
         
